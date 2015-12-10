@@ -16,7 +16,12 @@ let alien = new LivingThing('alien',false,true,false,true,true);
 console.log('alien.constructor.name',alien.constructor.name);
 console.log('alien',alien);
 
-let archaea = new Archaea('Acidilobus saccharovorans');
+let yoda = new LivingThing('yoda',true,true,false,true,true);
+console.log('yoda.constructor.name',yoda.constructor.name);
+console.log('yoda',yoda);
+console.log(yoda instanceof Eukaryota);
+
+let archaea = new Archaea('Acidilobus saccharovorans', false);
 console.log('archaea.constructor.name',archaea.constructor.name);
 console.log('archaea',archaea);
 
@@ -26,7 +31,10 @@ console.log('bacteria',bacteria);
 
 let eukaryota = new Eukaryota('Yeast', false, true, false, true);
 console.log('eukaryota.constructor.name',eukaryota.constructor.name);
+console.log(eukaryota.immobile = false);
 console.log('eukaryota',eukaryota);
+console.log(eukaryota instanceof Eukaryota);
+console.log(eukaryota instanceof LivingThing);
 
 let fungus = new Fungi('The Fungus among us');
 console.log('fungus.constructor.name',fungus.constructor.name);
